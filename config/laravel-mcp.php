@@ -11,5 +11,6 @@ return [
         \Sourcecodeguy1\LaravelMcp\Tools\ListModelsTool::class,
         \Sourcecodeguy1\LaravelMcp\Tools\GetMigrationsTool::class,
         \Sourcecodeguy1\LaravelMcp\Tools\GetEnvKeysTool::class,
+        \Sourcecodeguy1\LaravelMcp\Tools\ListMiddlewareTool::class,
     ],
 ];

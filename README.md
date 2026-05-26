@@ -55,6 +55,7 @@ Then restart Claude Desktop. You'll see a hammer icon in the chat — that means
 | `list_models` | All Eloquent models with table name, fillable/hidden fields, and detected relationships. |
 | `get_migrations` | Migration status — which have been run (with batch number) and which are pending. |
 | `get_env_keys` | All `.env` key names. **Never returns values** — keys only, for security. |
+| `list_middleware` | All registered middleware — global stack, named aliases, and groups (web, api, etc.). |
 
 ## Example Questions You Can Ask Claude
 
@@ -77,6 +78,7 @@ return [
         \Sourcecodeguy1\LaravelMcp\Tools\ListModelsTool::class,
         \Sourcecodeguy1\LaravelMcp\Tools\GetMigrationsTool::class,
         \Sourcecodeguy1\LaravelMcp\Tools\GetEnvKeysTool::class,
+        \Sourcecodeguy1\LaravelMcp\Tools\ListMiddlewareTool::class,
     ],
 ];
 ```
