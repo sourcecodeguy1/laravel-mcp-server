@@ -1,0 +1,43 @@
+{
+    "name": "sourcecodeguy1/laravel-mcp-server",
+    "description": "MCP server for Laravel — expose routes, schema, models, and migrations to AI agents like Claude",
+    "type": "library",
+    "keywords": ["laravel", "mcp", "ai", "claude", "model-context-protocol", "devtools"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julio Sandoval",
+            "email": "julio.sandoval.engineer@gmail.com",
+            "homepage": "https://juliowebmaster.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/console": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sourcecodeguy1\\LaravelMcp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sourcecodeguy1\\LaravelMcp\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sourcecodeguy1\\LaravelMcp\\LaravelMcpServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
