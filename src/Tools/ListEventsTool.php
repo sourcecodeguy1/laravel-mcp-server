@@ -20,7 +20,7 @@ class ListEventsTool extends Tool
     {
         return [
             'type'       => 'object',
-            'properties' => [],
+            'properties' => new \stdClass(),
         ];
     }
 
